@@ -107,3 +107,11 @@ nav a:hover, nav a:focus-visible { border-color:var(--ink); }
 .registered small { color:#63737a; }
 @media (max-width:900px) { .contact-layout { grid-template-columns:1fr; gap:3rem; } .listings-heading { align-items:start; flex-direction:column; gap:1rem; } }
 @media (max-width:700px) { .listing-grid,.form-row { grid-template-columns:1fr; } .listing-content { padding:1.5rem; } }
+
+.advert-feature { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1fr); align-items:center; gap:clamp(2rem,5vw,6rem); padding:0 0 6rem; border-bottom:1px solid var(--line); }
+.advert-intro h2 { margin:1rem 0 1.5rem; }
+.advert-intro p { max-width:25rem; font-size:1.15rem; line-height:1.6; }
+.advert-feature figure { margin:0; width:min(100%,560px); justify-self:center; }
+.advert-feature img { display:block; width:100%; height:auto; box-shadow:0 12px 35px #102b3620; }
+.advert-feature figcaption { margin-top:.75rem; color:#52656b; font-size:.85rem; }
+@media (max-width:800px) { .advert-feature { grid-template-columns:1fr; gap:2rem; padding-bottom:4rem; } .advert-feature figure { justify-self:start; } }
